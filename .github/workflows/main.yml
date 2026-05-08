@@ -22,7 +22,7 @@ jobs:
       run: msbuild WindowsFormsApp1.sln /p:Configuration=Release /p:Platform="Any CPU"
     
     - name: Upload Build
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Build-Output
         path: bin/Release/
